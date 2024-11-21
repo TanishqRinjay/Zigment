@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import JSONEditor from "./components/JSONEditor";
 import FormPreview from "./components/FormPreview";
 import { FormSchema } from "./types/formSchema";
-import { IoIosMoon, IoIosSunny } from "react-icons/io";
+import { IoMoon, IoSunny } from "react-icons/io5";
+
 
 
 const initialJSON = `
@@ -61,7 +62,7 @@ function App() {
                     onClick={toggleDarkMode}
                     className="bg-gray-800 text-white px-2 py-2 rounded-full text-2xl"
                 >
-                    {isDarkMode ? <IoIosMoon/> : <IoIosSunny />}
+                    {isDarkMode ? <IoMoon/> : <IoSunny />}
                 </button>
             </div>
             <div className="flex flex-col md:flex-row gap-4 p-4">
